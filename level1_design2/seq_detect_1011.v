@@ -53,7 +53,7 @@ module seq_detect_1011(seq_seen, inp_bit, reset, clk);
       SEQ_10:
       begin
         if(inp_bit == 1)
-          next_state = SEQ_101;
+          next_state = SEQ_10;
         else
           next_state = IDLE;
       end
