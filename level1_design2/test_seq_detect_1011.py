@@ -42,40 +42,49 @@ async def test_seq_bug1(dut):
     await FallingEdge(dut.clk)
     dut.inp_bit.value <= 1
     await RisingEdge(dut.clk)
-    print("Inp_bit : ",int(dut.inp_bit)," seq_seen : ",int(dut.seq_seen))
+    dut._log.info("Inp_bit : %s ,seq_seen : %s, current_state : %s ",str(dut.inp_bit.value),str(dut.seq_seen.value),str(dut.current_state.value))
     await FallingEdge(dut.clk)
     dut.inp_bit.value <= 1
     await RisingEdge(dut.clk)
-    #print("Inp_bit : ",int(dut.inp_bit)," seq_seen : ",int(dut.seq_seen))
+    dut._log.info("Inp_bit : %s ,seq_seen : %s, current_state : %s ",str(dut.inp_bit.value),str(dut.seq_seen.value),str(dut.current_state.value))
+    
     await FallingEdge(dut.clk)
     dut.inp_bit.value <= 0
     await RisingEdge(dut.clk)
-    #print("Inp_bit : ",int(dut.inp_bit)," seq_seen : ",int(dut.seq_seen))
+    dut._log.info("Inp_bit : %s ,seq_seen : %s, current_state : %s ",str(dut.inp_bit.value),str(dut.seq_seen.value),str(dut.current_state.value))
+    
     await FallingEdge(dut.clk)
     dut.inp_bit.value <= 1
     await RisingEdge(dut.clk)
-    #print("Inp_bit : ",int(dut.inp_bit)," seq_seen : ",int(dut.seq_seen))
+    dut._log.info("Inp_bit : %s ,seq_seen : %s, current_state : %s ",str(dut.inp_bit.value),str(dut.seq_seen.value),str(dut.current_state.value))
+    
     await FallingEdge(dut.clk)
     dut.inp_bit.value <= 1
     await RisingEdge(dut.clk)
-    #print("Inp_bit : ",int(dut.inp_bit)," seq_seen : ",int(dut.seq_seen))
+    dut._log.info("Inp_bit : %s ,seq_seen : %s, current_state : %s ",str(dut.inp_bit.value),str(dut.seq_seen.value),str(dut.current_state.value))
+    
     await FallingEdge(dut.clk)
     dut.inp_bit.value <= 0
     await RisingEdge(dut.clk)
-    #print("Inp_bit : ",int(dut.inp_bit)," seq_seen : ",int(dut.seq_seen))
+    dut._log.info("Inp_bit : %s ,seq_seen : %s, current_state : %s ",str(dut.inp_bit.value),str(dut.seq_seen.value),str(dut.current_state.value))
+    
     await FallingEdge(dut.clk)
     dut.inp_bit.value <= 1
     await RisingEdge(dut.clk)
-    #print("Inp_bit : ",int(dut.inp_bit)," seq_seen : ",int(dut.seq_seen))
+    dut._log.info("Inp_bit : %s ,seq_seen : %s, current_state : %s ",str(dut.inp_bit.value),str(dut.seq_seen.value),str(dut.current_state.value))
+    
     await FallingEdge(dut.clk)
     dut.inp_bit.value <= 0
     await RisingEdge(dut.clk)
-    #print("Inp_bit : ",int(dut.inp_bit)," seq_seen : ",int(dut.seq_seen))
+    dut._log.info("Inp_bit : %s ,seq_seen : %s, current_state : %s ",str(dut.inp_bit.value),str(dut.seq_seen.value),str(dut.current_state.value))
+    
     await FallingEdge(dut.clk)
     dut.inp_bit.value <= 1
     await RisingEdge(dut.clk)
-    #print("Inp_bit : ",int(dut.inp_bit)," seq_seen : ",int(dut.seq_seen))
+    dut._log.info("Inp_bit : %s ,seq_seen : %s, current_state : %s ",str(dut.inp_bit.value),str(dut.seq_seen.value),str(dut.current_state.value))
+    
     await FallingEdge(dut.clk)
     dut.inp_bit.value <= 1
     await RisingEdge(dut.clk)
-    #print("Inp_bit : ",int(dut.inp_bit)," seq_seen : ",int(dut.seq_seen))
+    dut._log.info("Inp_bit : %s ,seq_seen : %s, current_state : %s ",str(dut.inp_bit.value),str(dut.seq_seen.value),str(dut.current_state.value))
+    
