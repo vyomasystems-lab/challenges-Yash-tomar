@@ -1,7 +1,6 @@
 # See LICENSE.vyoma for details
 
 SIM ?= icarus
-WAVES = 1
 TOPLEVEL_LANG ?= verilog
 
 PWD=$(shell pwd)
