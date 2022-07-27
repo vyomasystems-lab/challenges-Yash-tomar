@@ -70,4 +70,11 @@ module seq_detect_1011(seq_seen, inp_bit, reset, clk);
       end
     endcase
   end
+
+  `ifdef COCOTB_SIM
+initial begin
+  $dumpfile ("seq_detect_1011.vcd");
+  $dumpvars (0, seq_detect_1011);
+  #1;
+end
 endmodule
